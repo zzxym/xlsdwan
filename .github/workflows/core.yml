@@ -2,9 +2,9 @@ name: xlsdwan Core
 
 on:
   push:
-    branches: ["develop", "main", "releases/**"]
+    branches: ["develop", "main", "master", "releases/**"]
   pull_request:
-    branches: ["develop", "main"]
+    branches: ["develop", "main", "master"]
 
 env:
   CARGO_TERM_COLOR: always
