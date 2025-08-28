@@ -1,4 +1,4 @@
-name: EasyTier GUI
+name: xlsdwan GUI
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
           concurrent_skipping: 'same_content_newer'
           skip_after_successful_duplicate: 'true'
           cancel_others: 'true'
-          paths: '["Cargo.toml", "Cargo.lock", "easytier/**", "easytier-gui/**", ".github/workflows/gui.yml", ".github/workflows/install_rust.sh", ".github/workflows/install_gui_dep.sh"]'
+          paths: '["Cargo.toml", "Cargo.lock", "xlsdwan/**", "xlsdwan-gui/**", ".github/workflows/gui.yml", ".github/workflows/install_rust.sh", ".github/workflows/install_gui_dep.sh"]'
   build-gui:
     strategy:
       fail-fast: false
@@ -70,7 +70,7 @@ jobs:
 
     runs-on: ${{ matrix.OS }}
     env:
-      NAME: easytier
+      NAME: xlsdwan
       TARGET: ${{ matrix.TARGET }}
       OS: ${{ matrix.OS }}
       GUI_TARGET: ${{ matrix.GUI_TARGET }}
@@ -170,18 +170,18 @@ jobs:
         if: ${{ matrix.OS == 'windows-latest' }}
         run: |
           if [[ $GUI_TARGET =~ ^aarch64.*$ ]]; then
-            cp ./easytier/third_party/arm64/*.dll ./easytier-gui/src-tauri/
+            cp ./xlsdwan/third_party/arm64/*.dll ./xlsdwan-gui/src-tauri/
           elif [[ $GUI_TARGET =~ ^i686.*$ ]]; then
-            cp ./easytier/third_party/i686/*.dll ./easytier-gui/src-tauri/
+            cp ./xlsdwan/third_party/i686/*.dll ./xlsdwan-gui/src-tauri/
           else
-            cp ./easytier/third_party/*.dll ./easytier-gui/src-tauri/
+            cp ./xlsdwan/third_party/*.dll ./xlsdwan-gui/src-tauri/
           fi
 
       - name: Build GUI
         if: ${{ matrix.GUI_TARGET != '' }}
         uses: tauri-apps/tauri-action@v0
         with:
-          projectPath: ./easytier-gui
+          projectPath: ./xlsdwan-gui
           # https://tauri.app/v1/guides/building/linux/#cross-compiling-tauri-applications-for-arm-based-devices
           args: --verbose --target ${{ matrix.GUI_TARGET }} ${{ matrix.OS == 'ubuntu-22.04' && contains(matrix.TARGET, 'aarch64') && '--bundles deb' || ''  }}
 
@@ -213,7 +213,7 @@ jobs:
       - name: Archive artifact
         uses: actions/upload-artifact@v4
         with:
-          name: easytier-gui-${{ matrix.ARTIFACT_NAME }}
+          name: xlsdwan-gui-${{ matrix.ARTIFACT_NAME }}
           path: |
             ./artifacts/*
 
