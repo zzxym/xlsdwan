@@ -104,7 +104,7 @@ disable_p2p: 禁用 P2P
 disable_p2p_help: 禁用 P2P 模式，所有流量通过手动指定的服务器中转。
 
 bind_device: 仅使用物理网卡
-bind_device_help: 仅使用物理网卡，避免 EasyTier 通过其他虚拟网建立连接。
+bind_device_help: 仅使用物理网卡，避免 sdwan 通过其他虚拟网建立连接。
 
 no_tun: 无 TUN 模式
 no_tun_help: 不使用 TUN 网卡，适合无管理员权限时使用。本节点仅允许被访问。访问其他节点需要使用 SOCK5
@@ -134,7 +134,7 @@ disable_sym_hole_punching_help: 禁用对称NAT的打洞（生日攻击），将
 
 enable_magic_dns: 启用魔法DNS
 enable_magic_dns_help: |
-  启用魔法DNS，允许通过EasyTier的DNS服务器访问其他节点的虚拟IPv4地址， 如 node1.et.net。
+  启用魔法DNS，允许通过sdwan的DNS服务器访问其他节点的虚拟IPv4地址， 如 node1.et.net。
 
 enable_private_mode: 启用私有模式
 enable_private_mode_help: |
@@ -194,7 +194,7 @@ about:
   author: 作者
   homepage: 主页
   license: 许可证
-  description: 一个简单、安全、去中心化的内网穿透 VPN 组网方案，使用 Rust 语言和 Tokio 框架实现。
+  description: 一个简单、安全SDWAN异地组网方案。
   check_update: 检查更新
 
 event:

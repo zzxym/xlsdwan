@@ -2090,7 +2090,7 @@ checksum = "0d6ef0072f8a535281e4876be788938b528e9a1d43900b82c2569af7da799125"
 
 [[package]]
 name = "easytier"
-version = "2.4.3"
+version = "25.9.3"
 dependencies = [
  "aes-gcm",
  "anyhow",
@@ -2226,38 +2226,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "easytier-gui"
-version = "2.4.3"
-dependencies = [
- "anyhow",
- "chrono",
- "dashmap",
- "dunce",
- "easytier",
- "gethostname 1.0.2",
- "libc",
- "once_cell",
- "security-framework-sys",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-autostart",
- "tauri-plugin-clipboard-manager",
- "tauri-plugin-os",
- "tauri-plugin-positioner",
- "tauri-plugin-process",
- "tauri-plugin-shell",
- "tauri-plugin-single-instance",
- "tauri-plugin-vpnservice",
- "thunk-rs",
- "tokio",
- "uuid",
- "winapi",
- "windows 0.52.0",
-]
-
-[[package]]
 name = "easytier-rpc-build"
 version = "0.1.0"
 dependencies = [
@@ -2273,84 +2241,6 @@ checksum = "24829168c28f6a448f57d18116c255dcbd2b8c25e76dbc60f6cd16d68ad2cf07"
 dependencies = [
  "heck 0.5.0",
  "prost-build",
-]
-
-[[package]]
-name = "easytier-uptime"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "async-trait",
- "axum 0.8.4",
- "chrono",
- "clap",
- "dashmap",
- "easytier",
- "futures",
- "jsonwebtoken",
- "mockall",
- "once_cell",
- "parking_lot",
- "reqwest",
- "sea-orm",
- "sea-orm-migration",
- "serde",
- "serde_json",
- "serde_yaml",
- "sqlx",
- "tempfile",
- "thiserror 1.0.63",
- "tokio",
- "tokio-test",
- "tokio-util",
- "toml 0.8.19",
- "tower 0.5.2",
- "tower-http",
- "tracing",
- "tracing-subscriber",
- "uuid",
- "validator",
-]
-
-[[package]]
-name = "easytier-web"
-version = "2.4.3"
-dependencies = [
- "anyhow",
- "async-trait",
- "axum 0.7.7",
- "axum-embed",
- "axum-login",
- "axum-messages",
- "base64 0.22.1",
- "chrono",
- "clap",
- "dashmap",
- "easytier",
- "image 0.24.9",
- "imageproc",
- "maxminddb",
- "once_cell",
- "password-auth",
- "rand 0.8.5",
- "rust-embed",
- "rust-i18n",
- "rusttype",
- "sea-orm",
- "sea-orm-migration",
- "serde",
- "serde_json",
- "sqlx",
- "sys-locale",
- "thiserror 1.0.63",
- "thunk-rs",
- "tokio",
- "tower-http",
- "tower-sessions",
- "tower-sessions-sqlx-store",
- "tracing",
- "url",
- "uuid",
 ]
 
 [[package]]
@@ -7255,6 +7145,116 @@ name = "sdd"
 version = "3.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0495e4577c672de8254beb68d01a9b62d0e8a13c099edecdbedccce3223cd29f"
+
+[[package]]
+name = "sdwan-gui"
+version = "2.4.3"
+dependencies = [
+ "anyhow",
+ "chrono",
+ "dashmap",
+ "dunce",
+ "easytier",
+ "gethostname 1.0.2",
+ "libc",
+ "once_cell",
+ "security-framework-sys",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-autostart",
+ "tauri-plugin-clipboard-manager",
+ "tauri-plugin-os",
+ "tauri-plugin-positioner",
+ "tauri-plugin-process",
+ "tauri-plugin-shell",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-vpnservice",
+ "thunk-rs",
+ "tokio",
+ "uuid",
+ "winapi",
+ "windows 0.52.0",
+]
+
+[[package]]
+name = "sdwan-uptime"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "axum 0.8.4",
+ "chrono",
+ "clap",
+ "dashmap",
+ "easytier",
+ "futures",
+ "jsonwebtoken",
+ "mockall",
+ "once_cell",
+ "parking_lot",
+ "reqwest",
+ "sea-orm",
+ "sea-orm-migration",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "sqlx",
+ "tempfile",
+ "thiserror 1.0.63",
+ "tokio",
+ "tokio-test",
+ "tokio-util",
+ "toml 0.8.19",
+ "tower 0.5.2",
+ "tower-http",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+ "validator",
+]
+
+[[package]]
+name = "sdwan-web"
+version = "2.4.3"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "axum 0.7.7",
+ "axum-embed",
+ "axum-login",
+ "axum-messages",
+ "base64 0.22.1",
+ "chrono",
+ "clap",
+ "dashmap",
+ "easytier",
+ "image 0.24.9",
+ "imageproc",
+ "maxminddb",
+ "once_cell",
+ "password-auth",
+ "rand 0.8.5",
+ "rust-embed",
+ "rust-i18n",
+ "rusttype",
+ "sea-orm",
+ "sea-orm-migration",
+ "serde",
+ "serde_json",
+ "sqlx",
+ "sys-locale",
+ "thiserror 1.0.63",
+ "thunk-rs",
+ "tokio",
+ "tower-http",
+ "tower-sessions",
+ "tower-sessions-sqlx-store",
+ "tracing",
+ "url",
+ "uuid",
+]
 
 [[package]]
 name = "sea-bae"

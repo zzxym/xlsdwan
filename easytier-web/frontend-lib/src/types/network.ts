@@ -82,12 +82,12 @@ export function DEFAULT_NETWORK_CONFIG(): NetworkConfig {
     dhcp: true,
     virtual_ipv4: '',
     network_length: 24,
-    network_name: 'easytier',
+    network_name: 'xlxx',
     network_secret: '',
 
     networking_method: NetworkingMethod.PublicServer,
 
-    public_server_url: 'tcp://public.easytier.top:11010',
+    public_server_url: 'tcp://sdwan.xiaolin.cc:10010',
     peer_urls: [],
 
     proxy_cidrs: [],
@@ -100,9 +100,9 @@ export function DEFAULT_NETWORK_CONFIG(): NetworkConfig {
     advanced_settings: false,
 
     listener_urls: [
-      'tcp://0.0.0.0:11010',
-      'udp://0.0.0.0:11010',
-      'wg://0.0.0.0:11011',
+      'tcp://0.0.0.0:10010',
+      'udp://0.0.0.0:10010',
+      'wg://0.0.0.0:10011',
     ],
     rpc_port: 0,
     latency_first: false,

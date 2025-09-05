@@ -97,7 +97,7 @@ fn dump_profile(_cur_allocated: usize) {
 }
 
 #[derive(Parser, Debug)]
-#[command(name = "easytier-core", author, version = EASYTIER_VERSION , about, long_about = None)]
+#[command(name = "sdwan-core", author, version = EASYTIER_VERSION , about, long_about = None)]
 struct Cli {
     #[arg(
         short = 'w',
@@ -1282,7 +1282,7 @@ async fn main() -> ExitCode {
     let cli = Cli::parse();
     if let Some(shell) = cli.gen_autocomplete {
         let mut cmd = Cli::command();
-        easytier::print_completions(shell, &mut cmd, "easytier-core");
+        easytier::print_completions(shell, &mut cmd, "sdwan-core");
         return ExitCode::SUCCESS;
     }
     let mut ret_code = 0;

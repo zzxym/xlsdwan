@@ -3,6 +3,7 @@ syntax = "proto3";
 import "common.proto";
 import "peer_rpc.proto";
 import "acl.proto";
+import "google/protobuf/timestamp.proto";
 
 package cli;
 

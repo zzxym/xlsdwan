@@ -53,7 +53,7 @@ use easytier::{
 rust_i18n::i18n!("locales", fallback = "en");
 
 #[derive(Parser, Debug)]
-#[command(name = "easytier-cli", author, version = EASYTIER_VERSION, about, long_about = None)]
+#[command(name = "sdwan-cli", author, version = EASYTIER_VERSION, about, long_about = None)]
 struct Cli {
     /// the instance name
     #[arg(short = 'p', long, default_value = "127.0.0.1:15888")]
@@ -91,9 +91,9 @@ enum SubCommand {
     PeerCenter,
     #[command(about = "show vpn portal (wireguard) info")]
     VpnPortal,
-    #[command(about = "inspect self easytier-core status")]
+    #[command(about = "inspect self sdwan-core status")]
     Node(NodeArgs),
-    #[command(about = "manage easytier-core as a system service")]
+    #[command(about = "manage sdwan-core as a system service")]
     Service(ServiceArgs),
     #[command(about = "show tcp/kcp proxy status")]
     Proxy,

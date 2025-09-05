@@ -3,7 +3,7 @@ name = "easytier"
 description = "A full meshed p2p VPN, connecting all your devices in one network with one command."
 homepage = "https://github.com/EasyTier/EasyTier"
 repository = "https://github.com/EasyTier/EasyTier"
-version = "2.4.3"
+version = "25.9.3"
 edition = "2021"
 authors = ["kkrainbow"]
 keywords = ["vpn", "p2p", "network", "easytier"]
@@ -15,12 +15,12 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name = "easytier-core"
+name = "sdwan-core"
 path = "src/easytier-core.rs"
 test = false
 
 [[bin]]
-name = "easytier-cli"
+name = "sdwan-cli"
 path = "src/easytier-cli.rs"
 
 [lib]

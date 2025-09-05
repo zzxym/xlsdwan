@@ -1,3 +1,3 @@
 window.apiMeta = {
-    api_host: "https://config-server.easytier.cn"
-}
+ api_host: "http://oa.xiaolin.cc:11211",
+ }

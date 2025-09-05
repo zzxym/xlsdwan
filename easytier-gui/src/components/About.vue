@@ -13,7 +13,7 @@ onMounted(async () => {
 <template>
   <Card>
     <template #title>
-      Easytier - {{ t('about.version') }}: {{ etVersion }}
+      SDWAN - {{ t('about.version') }}: {{ etVersion }}
     </template>
     <template #content>
       <p class="mb-1">

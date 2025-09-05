@@ -1,8 +1,8 @@
 [package]
-name = "easytier-web"
+name = "sdwan-web"
 version = "2.4.3"
 edition = "2021"
-description = "Config server for easytier. easytier-core gets config from this and web frontend use it as restful api server."
+description = "Config server for sdwan. sdwan-core gets config from this and web frontend use it as restful api server."
 
 [dependencies]
 easytier = { path = "../easytier" }

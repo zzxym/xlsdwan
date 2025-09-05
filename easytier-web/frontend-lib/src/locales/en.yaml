@@ -103,7 +103,7 @@ disable_p2p: Disable P2P
 disable_p2p_help: Disable P2P mode; route all traffic through a manually specified relay server.
 
 bind_device: Bind to Physical Device Only
-bind_device_help: Use only the physical network interface to prevent EasyTier from connecting via virtual networks.
+bind_device_help: Use only the physical network interface to prevent sdwan from connecting via virtual networks.
 
 no_tun: No TUN Mode
 no_tun_help: Do not use a TUN interface, suitable for environments without administrator privileges. This node is only accessible; accessing other nodes requires SOCKS5.
@@ -194,7 +194,7 @@ about:
   author: Author
   homepage: Homepage
   license: License
-  description: 'EasyTier is a simple, safe and decentralized VPN networking solution implemented with the Rust language and Tokio framework.'
+  description: 'This is a simple and safe sdwan networking solution.'
   check_update: Check Update
 
 event:
